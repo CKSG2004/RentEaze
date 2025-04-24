@@ -1,0 +1,29 @@
+{
+  "name": "renteaze",
+  "version": "1.0.0",
+  "description": "Home/House Rental Website (for DBMS)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CKSG2004/RentEaze.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CKSG2004/RentEaze/issues"
+  },
+  "homepage": "https://github.com/CKSG2004/RentEaze#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "sqlite3": "^5.1.7"
+  }
+}

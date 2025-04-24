@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentEaze</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Left Pane -->
+  <div class="left-frame">
+    <video autoplay muted loop class="background-video">
+      <source src="images/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="left-content">
+      <nav class="nav-bar">
+        <button class="nav-btn" onclick="showSection('register')"><i class="fas fa-user-plus"></i> Register</button>
+        <button class="nav-btn" onclick="showSection('login')"><i class="fas fa-sign-in-alt"></i> Login</button>
+      </nav>
+
+      <!-- Register Section -->
+      <section id="register" class="section">
+        <form id="registerForm" class="form" autocomplete="off">
+          <h2>Register</h2>
+          <label for="registerUsername">Username</label>
+          <input type="text" id="registerUsername" name="user_name" placeholder="Enter your name" required autocomplete="off" />
+
+          <label for="registerPassword">Password</label>
+          <input type="password" id="registerPassword" name="user_password" placeholder="Password" required autocomplete="off" />
+
+          <label for="registerContact">Contact</label>
+          <input type="text" id="registerContact" name="user_contact" placeholder="Enter your contact (e.g., phone/email)" required />
+
+          <label for="registerAddress">Address</label>
+          <input type="text" id="registerAddress" name="user_address" placeholder="Enter your address" required />
+
+          <label for="registerOccupation">Occupation</label>
+          <input type="text" id="registerOccupation" name="user_occupation" placeholder="Enter your occupation" required />
+
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </section>
+
+      <!-- Login Section -->
+      <section id="login" class="section">
+        <form id="loginForm" class="form" autocomplete="off">
+          <h2>Login</h2>
+          <label for="loginUsername">Username</label>
+          <input type="text" id="loginUsername" name="user_name" placeholder="Enter your name" required autocomplete="off" />
+
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="user_password" placeholder="Password" required autocomplete="off" />
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <!-- Right Pane -->
+  <div class="right-frame">
+    <div class="about-content">
+      <h2>Welcome to <span class="brand">RentEaze</span></h2>
+      <p>
+        RentEaze is your platform for hassle-free rental management. Whether you're a property owner listing your space, or a renter looking for the perfect place to stay, RentEaze has you covered.
+      </p>
+      <ul>
+        <li>Seamless registration and login for Admins & Users</li>
+        <li>Manage property listings and rental requests with ease</li>
+      </ul>
+      <p>
+        We're simplifying the rental journey – one property at a time.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 <strong>RentEaze</strong>. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
